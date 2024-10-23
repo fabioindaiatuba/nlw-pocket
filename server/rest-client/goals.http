@@ -1,10 +1,24 @@
 @BASE_URL=http://localhost:3333
 
+
+GET {{BASE_URL}}/pending-goals
+Content-Type: application/json
+####
+
 POST {{BASE_URL}}/goals
 Content-Type: application/json
 
 {
-    "title":"Nadar",
+    "title":"Nadar", 
     "desiredWeeklyFrequency": 2
+}
+####
+
+
+POST {{BASE_URL}}/completions
+Content-Type: application/json
+
+{
+    "goalId": "rtqv513mzuosni1l1qq40cby"
 }
 ####
