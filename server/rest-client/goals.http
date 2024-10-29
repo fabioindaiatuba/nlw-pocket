@@ -14,8 +14,8 @@ POST {{BASE_URL}}/goals
 Content-Type: application/json
 
 {
-    "title":"Nadar", 
-    "desiredWeeklyFrequency": 2
+    "title":"Fazer Exercício", 
+    "desiredWeeklyFrequency": 4
 }
 ####
 
