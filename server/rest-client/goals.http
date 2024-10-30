@@ -24,6 +24,6 @@ POST {{BASE_URL}}/completions
 Content-Type: application/json
 
 {
-    "goalId": "ej483ftki8q43o9t6lqdka1u"
+    "goalId": "u2bcwra4tw65wgl5k3hhc5b4"
 }
 ####
