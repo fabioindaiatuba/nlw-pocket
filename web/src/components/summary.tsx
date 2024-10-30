@@ -1,6 +1,6 @@
 import { useQuery } from "@tanstack/react-query";
 import dayjs from "dayjs";
-import ptBR from 'dayjs/locale/pt-BR';
+import ptBR from 'dayjs/locale/pt-br';
 import { CheckCircle2, Plus } from "lucide-react";
 import { getSummary } from "../http/get-summary";
 import { InOrbitIcon } from "./in-orbit-icon";
@@ -9,6 +9,7 @@ import { DialogTrigger } from "./ui/dialog";
 import { OutlineButton } from "./ui/outline-button";
 import { Progress, ProgressIndicator } from "./ui/progress-bar";
 import { Separator } from "./ui/separator";
+import { PendingGoals } from "./pedding-goals";
 
 dayjs.locale(ptBR);
 
@@ -63,27 +64,7 @@ export function Summary() {
 
       <Separator />
 
-      <div className="flex flex-wrap gap-3">
-        <OutlineButton>
-          <Plus className="size-4 text-zinc-600" />
-          Meditar
-        </OutlineButton>
-
-        <OutlineButton>
-          <Plus className="size-4 text-zinc-600" />
-          Nadar
-        </OutlineButton>
-
-        <OutlineButton>
-          <Plus className="size-4 text-zinc-600" />
-          Praticar exercício
-        </OutlineButton>
-
-        <OutlineButton>
-          <Plus className="size-4 text-zinc-600" />
-          Alimentar bem
-        </OutlineButton>
-      </div>
+      <PendingGoals />
 
       <div className="flex flex-col gap-6">
         <h2 className="text-xl font-medium">Sua semana</h2>
