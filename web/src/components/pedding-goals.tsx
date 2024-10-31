@@ -17,7 +17,7 @@ export function PendingGoals() {
   }
 
   async function handleCompletGoal(goalId: string) {
-    createGoalCompletion(goalId);
+    await createGoalCompletion(goalId);
     queryClient.invalidateQueries({
       queryKey: ['summary']
     })
